@@ -13,26 +13,26 @@ Java课程作业第二次实验
 2. 编写Course实体类以及模拟系统操作的主类Test类
 3. 主类通过实例化Student、Teacher、Course类的实体，完成学生选课并输出信息、学生退课并输出信息的模拟操作
 ## 三、实验过程
-1. 创建父类SchoolPerson并满足以下要求：
+#### 1. 创建父类SchoolPerson并满足以下要求：
 - 具有（姓名）name、（编号）num、（性别）gender、（电话）tel、（民族）nation属性
 - 重载构造方法SchoolPerson，参数列表为全部属性
 - 重写toString（）方法，输出属性信息
-2. 创建子类Student类并满足以下要求：
+#### 2. 创建子类Student类并满足以下要求：
 - 具有从父类继承来的（姓名）name、（编号）num、（性别）gender、（电话）tel、（民族）nation属性，以及新属性（课程）scourse、（成绩）grade
 - 编写setter、getter方法
 - 拥有super()方法调用父类有参数的构造方法
 - 重写toString（）方法，输出属性信息
-3. 创建子类Teacher类并满足以下要求：
+#### 3. 创建子类Teacher类并满足以下要求：
 - 具有从父类继承来的（姓名）name、（编号）num、（性别）gender、（电话）tel、（民族）nation属性，以及新属性（课程）tcourse、（职称）competent
 - 拥有super()方法调用父类有参数的构造方法
 - 编写setter、getter方法
 - 重写toString（）方法，输出属性信息
-4. 创建Course类并满足以下要求：
+#### 4. 创建Course类并满足以下要求：
 - 具有（课程名称）name、（课程编号）num、（上课地点）location、（授课教师）teacher、（上课时间）time、（学分）credit属性
 - 分别拥有无参和有参的构造方法
 - 编写setter、getter方法
 - 重写toString（）方法，输出属性信息
-5. 创建Test主类并满足以下要求：
+#### 5. 创建Test主类并满足以下要求：
 - 在main（）方法中实例化Teacher、Student、Course实体类，并赋值
 - 分别拥有无参和有参的构造方法
 - 编写setter、getter方法
