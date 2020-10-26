@@ -38,7 +38,7 @@ Java课程作业第二次实验
 - 编写setter、getter方法
 - 重写toString（）方法，输出属性信息
 
-## 三、核心代码
+## 四、核心代码与注释
 
 #### 1. 方法一
 父类Student
@@ -136,7 +136,7 @@ Course类
 			System.out.println(tch);
 		}
 ```
-## 四、实验结果
+## 五、实验结果运行截图
 
 ##### 学生选课成功，输出打印学生信息、所选课程信息、老师信息
 
@@ -145,5 +145,5 @@ Course类
 ##### 学生选课失败，输出打印学生信息
 
 ![图片文件](http://note.youdao.com/yws/public/resource/0310ad631bfd36a3baed93ed5fd3447a/xmlnote/WEBRESOURCE78cf137c40ae2a01c82c33b99d4e7470/16)
-## 五、实验感想
+## 六、实验感想
 通过简单分析需求，我决定使用逻辑判断Student类的scourse属性值，选择输出打印的内容，模拟学生选课退课的操作。此次实验将SchoolPerson设为主类抽取共同属性，子类Student和Teacher分别用super（）方法体现了继承的特性，以及通过使用Object类的toString（）方法输出打印信息，实验过程中遇到无法正确输出信息问题，发现是因为对象调用set方法时出现错误。通过本次实验，我加深了对子类继承父类内容的理解，同时重新复习了构造方法和重载的概念，基本完成本次实验任务。
