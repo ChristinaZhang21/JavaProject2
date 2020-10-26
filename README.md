@@ -140,7 +140,7 @@ Course类
 
 ##### 学生选课成功，输出打印学生信息、所选课程信息、老师信息
 
-![图片文件](http://note.youdao.com/yws/public/resource/005905b3b9737f8d4dcf04a084f7ca70/xmlnote/WEBRESOURCE67428783a90fc669bf2eea4b65b48acb/13)
+![图片文件](http://note.youdao.com/yws/public/resource/1a6540318fbcd87bfdb94a92233d55cd/xmlnote/WEBRESOURCEcae05bb7889ab735a67d71724f5f3ad9/22)
 
 ##### 学生选课失败，输出打印学生信息
 
