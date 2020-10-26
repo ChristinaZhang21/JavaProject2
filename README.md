@@ -37,69 +37,109 @@ Java课程作业第二次实验
 - 分别拥有无参和有参的构造方法
 - 编写setter、getter方法
 - 重写toString（）方法，输出属性信息
-2. 完成附加要求：
-- 将多个类放置在不同的包中。
-- 每个类中定义不少于两个构造方法，定义不少于两个属性，且多样化属性类型和修饰符。
-- 在类中定义get和set方法操作属性。
-- 在CPU类中定义的setSpeed（int）方法设置逻辑判断，speed需大于0。
+
 ## 三、核心代码
+
 1. 方法一
-pc类中的赋值方法
+父类Student
 ```
-public void setCpu(CPU c){
-		this.cpu=c;
+	//父类SchoolPerson有参的构造方法
+	SchoolPeople(String name,int num,String gender,int tel,String nation){	
+		this.name=name;
+		this.num=num;
+		this.gender=gender;
+		this.tel=tel;
+		this.nation=nation;
 	}
-public void setHardDisk(HardDisk h){
-		this.HD=h;
+	//父类SchoolPerson的输出方法toString（）
+	public String toString(){
+		return "|姓名："+name+
+				"| |编号："+num+
+				"| |性别："+gender+
+				"|	|联系方式："+tel+"||民族："+nation+"|";		
 	}
 ```
 2. 方法二
-cpu类的两个构造方法
+子类Student
 ```
-public CPU(){
-		super();
-		//第一个构造方法
+//重载父类构造方法
+	Student(String name,int num,String gender,int tel,String nation){
+		super(name,num,gender,tel,nation);
 	}
-	CPU(int speed,double price){
-		//第二个构造方法
+	//输出学生信息
+	public String toString(){
+		return "学生信息："+"\r\n"+super.toString()+"\r\n";
 	}
 ```
 3. 方法三
-pc类中的show（）方法
+子类Teacher
 ```
-public void show(){
-	System.out.println("CPU的速度为："+cpu.getSpeed()+"
-			;硬盘的容量为："+HD.getAmount());
+//重载父类构造方法
+	Teacher(String name,int num,String gender,int tel,String nation){
+		super(name,num,gender,tel,nation);
+	}
+//子类单独定义属性
+	Course tcourse;
+	String competent;
+//子类输出教师信息
+	public String toString(){
+		return "\r\n"+"授课教师信息："+"\r\n"+super.toString()+"|职称："+competent+"|";
 	}
 ```
 4. 方法四
-CPU类中进行简单逻辑判断speed是否大于0的方法
+Course类
 
 ```
-public void setSpeed(int m){
-		if(m<0){
-			this.speed=0;
-		}else{
-			this.speed=m;
-		}
+//Course（）无参构造方法
+	Course(){}
+	//Course（）有参构造方法
+	Course(String name,int num,String location,String teacher,String time,double credit)
+	{
+		this.name=name;
+		this.num=num;
+		this.location=location;
+		this.teacher=teacher;
+		this.time=time;
+		this.credit=credit;
+	}
+	//输出课程信息
+	public String toString()
+	{ 
+		return "所选课程信息："+"\r\n"+"|课程名："+name+
+				"| |课程编号："+num+"| |上课地点："
+				+teacher+"| |授课教师："+location+
+				"| |上课时间："+time+"| |学分："+credit+"|";		
 	}
 ```
 5. 方法五
-主类中实例化其他类对象
+主类Test
 
 ```
-CPU cpu=new CPU();             
-cpu.setSpeed(2200);            
-HardDisk disk=new HardDisk();  
-disk.setAmount(200);           
-PC pc=new PC();                
-pc.setCpu(cpu);                
-pc.setHardDisk(disk);          
-pc.show();                     
+//实例化各个类的对象
+		Student stu1=new Student("莉莉",2020322,"女",1393939399,"汉");
+		Course cour1=new Course("大学物理",001,"李老师","图306","周一06节",3.0);
+		Course nocourse=new Course();
+		Teacher tch=new Teacher("李老师",0202333,"女",1306893522,"蒙族");                  
+```
+6. 方法六
+```
+//通过逻辑判断学生的选课状态
+		if (stu1.getScourse().num==0){
+			System.out.println("该学生未选课或已退课！");
+			System.out.println(stu1);
+			System.out.println("无选课信息");
+	
+		}else{
+			System.out.println("该学生已选课！");
+			System.out.println(stu1);
+			System.out.println(cour1);
+			System.out.println(tch);
+		}
 ```
 ## 四、实验结果
 
-运行程序成功，输出语句———CPU的速度为：2200;硬盘的容量为：200
+学生选课成功，输出打印学生信息、所选课程信息、老师信息
+学生选课失败，输出打印学生信息
 
 ![图片文件](http://note.youdao.com/yws/public/resource/1702e58cbd09251464ea013ed8cbb85d/xmlnote/WEBRESOURCE99148ae5dc3d90a8ed2f3a6eb4c37f59/10)
 ## 五、实验感想
