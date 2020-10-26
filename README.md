@@ -141,6 +141,6 @@ Course类
 学生选课成功，输出打印学生信息、所选课程信息、老师信息
 学生选课失败，输出打印学生信息
 
-![图片文件](http://note.youdao.com/yws/public/resource/1702e58cbd09251464ea013ed8cbb85d/xmlnote/WEBRESOURCE99148ae5dc3d90a8ed2f3a6eb4c37f59/10)
+![图片文件](http://note.youdao.com/yws/public/resource/005905b3b9737f8d4dcf04a084f7ca70/xmlnote/WEBRESOURCE67428783a90fc669bf2eea4b65b48acb/13)
 ## 五、实验感想
 通过本次实验，我掌握了JAVA编程的基本规则语法，对类与对象的概念，以及构造方法的使用，进行了深层次的学习，还通过修改属性修饰符为private或protected体会到了不同包下不同修饰符的权限设置。同时，我通过GitHub提交实验报告的任务，接触到了如何使用MarkDown语法书写ReadMe文档以及其它关于GitHub的使用问题，基本完成了本次实验的内容。
