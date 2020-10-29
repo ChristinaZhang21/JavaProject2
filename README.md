@@ -41,7 +41,7 @@ Java课程作业第二次实验
 ## 四、核心代码与注释
 
 #### 1. 方法一
-父类Student
+父类SchoolPerson
 ```
 	//父类SchoolPerson有参的构造方法
 	SchoolPeople(String name,int num,String gender,int tel,String nation){	
